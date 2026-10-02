@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Voz Interfaz",
+    "slug": "voz-interfaz",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vozinterfaz.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Esta app necesita acceso al micrófono para grabar audio y transcribirlo."
+      }
+    },
+    "android": {
+      "package": "com.vozinterfaz.app",
+      "permissions": ["RECORD_AUDIO", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"]
+    },
+    "web": {},
+    "plugins": [
+      "expo-av"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "voz-interfaz"
+      }
+    }
+  }
+}
